@@ -1,0 +1,6 @@
+out/
+__pycache__/
+.env
+.git-cmsgs/
+.pytest_cache/
+.pytesttmp/
