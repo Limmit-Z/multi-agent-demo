@@ -1,0 +1,26 @@
+[
+  {
+    "user_id": "alice",
+    "display_name": "演示用户 A",
+    "passwordless": true,
+    "orders": [
+      "ORD-1001",
+      "ORD-1003"
+    ],
+    "kb_scope": [
+      "**"
+    ]
+  },
+  {
+    "user_id": "bob",
+    "display_name": "演示用户 B",
+    "orders": [
+      "ORD-1002"
+    ],
+    "kb_scope": [
+      "guide/essentials/**",
+      "guide/components/**",
+      "api/**"
+    ]
+  }
+]

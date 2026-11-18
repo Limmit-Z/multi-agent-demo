@@ -1,0 +1,30 @@
+{"qid": "r001", "question": "极光笔记团队版多少钱？", "expected": "product_consult", "note": "直接询问价格"}
+{"qid": "r002", "question": "极光云盘和极光笔记哪个适合团队用？", "expected": "product_consult", "note": "产品对比"}
+{"qid": "r003", "question": "极光日历专业版比免费版多了什么？", "expected": "product_consult", "note": "版本差异"}
+{"qid": "r004", "question": "你们有什么产品？", "expected": "product_consult", "note": "产品清单"}
+{"qid": "r005", "question": "极光云盘的外链能设水印吗？", "expected": "product_consult", "note": "功能咨询"}
+{"qid": "r006", "question": "极光笔记支持导入 Notion 吗？", "expected": "product_consult", "note": "功能咨询"}
+{"qid": "r007", "question": "续费极光云盘有折扣吗？", "expected": "product_consult", "note": "价格政策"}
+{"qid": "r008", "question": "极光笔记离线能用吗？", "expected": "product_consult", "note": "功能咨询"}
+{"qid": "r009", "question": "我想给 20 人的团队买极光笔记，买哪个版本？", "expected": "product_consult", "note": "购买建议"}
+{"qid": "r010", "question": "极光日历支持 iCal 订阅吗？", "expected": "product_consult", "note": "功能咨询"}
+{"qid": "r011", "question": "我的 ORD-1002 开通了吗？", "expected": "order_query", "note": "订单状态"}
+{"qid": "r012", "question": "查一下我买过的极光笔记订单。", "expected": "order_query", "note": "订单查询"}
+{"qid": "r013", "question": "ORD-1001 的激活码发到哪了？", "expected": "order_query", "note": "订单详情"}
+{"qid": "r014", "question": "我的云盘还要多久开通？", "expected": "order_query", "note": "进度咨询"}
+{"qid": "r015", "question": "我买过几单？都是什么产品？", "expected": "order_query", "note": "订单汇总"}
+{"qid": "r016", "question": "ORD-1002 什么状态？", "expected": "order_query", "note": "订单状态"}
+{"qid": "r017", "question": "上周买的极光日历到账了吗？", "expected": "order_query", "note": "模糊但可由会话上下文补全"}
+{"qid": "r018", "question": "激活码没收到怎么办？", "expected": "after_sales", "note": "售后流程"}
+{"qid": "r019", "question": "订单付了钱但产品没开通，怎么处理？", "expected": "after_sales", "note": "售后流程"}
+{"qid": "r020", "question": "我想退掉极光云盘，流程是什么？", "expected": "after_sales", "note": "退款咨询"}
+{"qid": "r021", "question": "激活码输入显示无效，怎么回事？", "expected": "after_sales", "note": "故障排查"}
+{"qid": "r022", "question": "发票怎么开？", "expected": "after_sales", "note": "售后流程"}
+{"qid": "r023", "question": "ref 和 reactive 有什么区别，该怎么选？", "expected": "kb", "note": "知识库问题"}
+{"qid": "r024", "question": "v-for 的 key 为什么不能用 index？", "expected": "kb", "note": "知识库问题"}
+{"qid": "r025", "question": "watch 和 watchEffect 怎么选？", "expected": "kb", "note": "知识库问题"}
+{"qid": "r026", "question": "Vue 的 provide/inject 解决什么问题？", "expected": "kb", "note": "知识库问题"}
+{"qid": "r027", "question": "计算属性 getter 里能发请求吗？", "expected": "kb", "note": "知识库问题"}
+{"qid": "r028", "question": "这个产品怎么样？", "expected": "ambiguous", "note": "对象缺失，需澄清"}
+{"qid": "r029", "question": "帮我处理一下。", "expected": "ambiguous", "note": "动作与对象都缺失"}
+{"qid": "r030", "question": "它和那个有什么区别？", "expected": "ambiguous", "note": "指代不明"}

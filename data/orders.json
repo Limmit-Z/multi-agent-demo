@@ -1,0 +1,32 @@
+[
+  {
+    "order_id": "ORD-1001",
+    "user_id": "alice",
+    "sku": "aurora-notes",
+    "plan": "团队版",
+    "status": "已完成",
+    "detail": "激活码已发送至绑定邮箱",
+    "paid": "199 元",
+    "date": "2026-10-12"
+  },
+  {
+    "order_id": "ORD-1002",
+    "user_id": "bob",
+    "sku": "aurora-drive",
+    "plan": "标准版",
+    "status": "处理中",
+    "detail": "预计 24 小时内开通",
+    "paid": "99 元",
+    "date": "2026-11-05"
+  },
+  {
+    "order_id": "ORD-1003",
+    "user_id": "alice",
+    "sku": "aurora-calendar",
+    "plan": "专业版",
+    "status": "已完成",
+    "detail": "已开通，有效期至 2027-11-01",
+    "paid": "49 元",
+    "date": "2026-09-28"
+  }
+]
