@@ -1,13 +1,23 @@
 """Build the retriever from authorized documents only, before ranking."""
 import fnmatch
+import os
 import hashlib
 import json
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RAG = ROOT / '../rag-eval'
 _cache = {}
+
+
+def _rag_root():
+    """定位 rag-eval 仓库：优先环境变量，其次同级目录，再次仓库内目录。"""
+    env = os.environ.get('RAG_EVAL_PATH')
+    cands = ([Path(env)] if env else []) + [ROOT / '../rag-eval', ROOT / 'rag-eval']
+    for c in cands:
+        if (c / 'ingest.py').exists():
+            return c.resolve()
+    raise FileNotFoundError('rag-eval 仓库未找到：请与 rag-eval 同级、放在仓库目录内，或设置 RAG_EVAL_PATH')
 
 
 def permitted(path, scopes):
@@ -25,7 +35,7 @@ def search(query, user, top_k=3, path=None):
         raise ValueError('top_k must be positive')
     key = (tuple(sorted(scopes)), path)
     if key not in _cache:
-        sys.path.insert(0, str(RAG.resolve()))
+        sys.path.insert(0, str(_rag_root()))
         old = sys.dont_write_bytecode
         try:
             sys.dont_write_bytecode = True
