@@ -1,0 +1,6 @@
+[
+  {"name":"kb_agent","cn_name":"知识检索","description":"公开技术文档知识问答","tools":["kb_search"],"examples":["ref 和 reactive 怎么选"],"patterns":["\\bref\\b","\\breactive\\b","\\bv-for\\b","\\bcomputed\\b","\\bwatch(?:effect)?\\b","\\bprovide\\b","\\binject\\b","\\bvue\\b","计算属性","技术文档"],"priority":100,"handler":"agents.kb_agent:handle"},
+  {"name":"order_query","cn_name":"订单查询","description":"查询当前会话用户自己的订单","tools":["order_lookup"],"examples":["我的订单状态"],"patterns":["ord-\\d+","我的.{0,8}订单","订单.{0,8}(状态|查询|详情)","买过","上周买的","我的.{0,8}(开通|到账)"],"priority":90,"handler":"agents.order_query:handle"},
+  {"name":"after_sales","cn_name":"售后支持","description":"激活、退款、发票、故障处理","tools":["ticket_create","faq_search"],"examples":["发票怎么开"],"patterns":["激活","退款","退掉","退货","发票","故障","无效","没收到","没开通","工单"],"priority":80,"handler":"agents.after_sales:handle"},
+  {"name":"product_consult","cn_name":"产品咨询","description":"产品、价格、版本和购买建议","tools":["catalog_search"],"examples":["极光笔记多少钱"],"patterns":["极光笔记","极光云盘","极光日历","产品","续费","版本","多少钱","价格"],"priority":60,"handler":"agents.product_consult:handle"}
+]
